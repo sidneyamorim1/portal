@@ -3,38 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Megamania Drift</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Jogos retrô</title>
+    <link rel="stylesheet" href="./portal.css" />
   </head>
   <body>
-    <main id="app">
-      <canvas id="game" aria-label="Jogo de tiro espacial"></canvas>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Jogos retrô</p>
+        <h1>Jogos retrô</h1>
+        <p class="lead">
+          Um hub simples para reunir seus jogos retrô em um só lugar, com destaque para a aventura em pixel art.
+        </p>
 
-      <section id="hud">
-        <div id="score">SCORE 000000</div>
-        <div id="level">LEVEL 1</div>
+        <div class="heroMeta">
+          <div>
+            <span>Catálogo</span>
+            <strong id="gameCount">2 jogos</strong>
+          </div>
+          <div>
+            <span>Status</span>
+            <strong>Pronto para jogar</strong>
+          </div>
+        </div>
+
+        <div class="heroArt">
+          <img src="./assets/retro-arcade.png" alt="Arte retrô com fliperama e nave espacial" />
+        </div>
       </section>
 
-      <section id="energyWrap" aria-label="Barra de energia">
-        <div id="energyLabel">ENERGY</div>
-        <div id="energyBar"><div id="energyFill"></div></div>
-      </section>
+      <section class="spotlight">
+        <div class="previewTop">
+          <div class="dot red"></div>
+          <div class="dot yellow"></div>
+          <div class="dot green"></div>
+          <span>Destaque</span>
+        </div>
 
-      <section id="mobileControls" aria-label="Controles mobile">
-        <button id="btnLeft" class="ctrl">◀</button>
-        <button id="btnFire" class="ctrl fire">FIRE</button>
-        <button id="btnRight" class="ctrl">▶</button>
-      </section>
+        <div class="spotlightContent">
+          <div id="gamesGrid" class="gamesGrid"></div>
 
-      <section id="overlay" class="show">
-        <div class="panel">
-          <h1>Megamania Drift</h1>
-          <p>Destrua a onda inteira para recarregar energia e avançar de fase.</p>
-          <p>Desktop: ← → e espaço. Mobile: botões na tela.</p>
-          <button id="startBtn">START</button>
+          <div class="spotlightStats" aria-label="Resumo do portal">
+            <div class="statPill">
+              <span>Estilo</span>
+              <strong>Pixel arcade</strong>
+            </div>
+            <div class="statPill">
+              <span>Controles</span>
+              <strong>Desktop e mobile</strong>
+            </div>
+            <div class="statPill">
+              <span>Recursos</span>
+              <strong>Pause, power-ups e ondas</strong>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <script src="./main.js"></script>
+    <script src="./portal.js"></script>
   </body>
- </html>
+</html>
